@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Mahesa</title>
+
+
+
+
+<link rel="stylesheet" href="./assets/style.css">
+<style>
+.hero-line{background:linear-gradient(90deg,transparent,#7f1d3d,transparent)}
+</style>
+
+</head>
+<body class="bg-white text-[#332a2c]">
+
+<header class="fixed top-0 left-0 w-full z-50 bg-white/85 backdrop-blur-xl border-b border-[#e8dfe1]">
+<nav class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+<a href="index.html" class="text-2xl font-black tracking-wider">MAHESA<span class="text-[#7f1d3d]">.</span></a>
+<div class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a href="index.html" class="nav-link hover:text-[#8f2948] transition">HOME</a>
+<a href="about.html" class="nav-link hover:text-[#8f2948] transition">ABOUT</a>
+<a href="projects.html" class="nav-link hover:text-[#8f2948] transition">PROJECTS</a>
+<a href="skills.html" class="nav-link hover:text-[#8f2948] transition">SKILLS</a>
+</div>
+<a href="index.html#contact" class="hidden md:block border border-[#7f1d3d] text-[#8f2948] px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#7f1d3d] hover:text-white transition">CONTACT</a>
+<button id="menuButton" class="md:hidden text-2xl text-[#554b4e]">☰</button>
+</nav>
+<div id="mobileMenu" class="hidden md:hidden border-t border-[#e8dfe1] bg-white">
+<div class="px-6 py-6 flex flex-col gap-5 text-sm">
+<a href="index.html" class="hover:text-[#8f2948]">HOME</a>
+<a href="about.html" class="hover:text-[#8f2948]">ABOUT</a>
+<a href="projects.html" class="hover:text-[#8f2948]">PROJECTS</a>
+<a href="skills.html" class="hover:text-[#8f2948]">SKILLS</a>
+<a href="index.html#contact" class="text-[#8f2948]">CONTACT</a>
+</div></div>
+</header>
+
+
+
+
+<div class="mt-24 bg-[#faf8f8] border border-[#7f1d3d]/20 rounded-3xl p-8 sm:p-12 lg:p-16">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div><p class="text-[#8f2948] text-sm uppercase tracking-[.3em] font-semibold">JavaScript Task</p><h2 class="text-4xl sm:text-5xl font-black mt-4">Simple <span class="text-[#7f1d3d]">Calculator</span></h2><p class="text-[#6f6467] leading-8 mt-6">Satu tugas JavaScript berupa kalkulator sederhana. Masukkan dua angka, pilih operator, lalu tekan hitung.</p><div class="mt-6 text-sm text-[#83777a]">Konsep: input, function, event listener, operator, conditional, dan DOM manipulation.</div></div>
+<div class="bg-white border border-[#e8dfe1] rounded-2xl p-7">
+<div class="grid grid-cols-2 gap-4">
+<div><label class="text-sm text-[#6f6467]">Angka Pertama</label><input id="num1" type="number" class="w-full mt-2 bg-white border border-[#e8dfe1] rounded-lg px-4 py-3 outline-none focus:border-[#7f1d3d]" placeholder="0"></div>
+<div><label class="text-sm text-[#6f6467]">Angka Kedua</label><input id="num2" type="number" class="w-full mt-2 bg-white border border-[#e8dfe1] rounded-lg px-4 py-3 outline-none focus:border-[#7f1d3d]" placeholder="0"></div>
+</div>
+<label class="block text-sm text-[#6f6467] mt-5">Operator</label>
+<select id="operator" class="w-full mt-2 bg-white border border-[#e8dfe1] rounded-lg px-4 py-3 outline-none focus:border-[#7f1d3d]">
+<option value="+">Penjumlahan (+)</option><option value="-">Pengurangan (-)</option><option value="*">Perkalian (×)</option><option value="/">Pembagian (÷)</option>
+</select>
+<button id="calculate" class="text-white w-full mt-5 bg-[#7f1d3d] hover:bg-[#6b1733] py-3.5 rounded-lg font-bold transition">HITUNG</button>
+<div class="mt-5 p-5 bg-white border border-[#e8dfe1] rounded-xl"><p class="text-xs text-[#83777a] uppercase tracking-widest">Hasil</p><p id="result" class="text-3xl font-black text-[#8f2948] mt-2">0</p><p id="formula" class="text-sm text-[#95898c] mt-2">Belum ada perhitungan.</p></div>
+</div><main class="pt-20">
+</div></div>
+</div></section>
+</main>
+
+
+<footer class="border-t border-[#e8dfe1] bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 py-14">
+<div class="grid md:grid-cols-3 gap-10">
+<div>
+<h3 class="text-2xl font-black">MAHESA<span class="text-[#7f1d3d]">.</span></h3>
+<p class="text-[#83777a] mt-4 leading-7 max-w-sm">Personal portfolio showcasing projects, skills, and my journey in technology.</p>
+</div>
+<div>
+<h4 class="font-bold mb-5">Navigation</h4>
+<div class="flex flex-col gap-3 text-[#83777a] text-sm">
+<a href="index.html" class="hover:text-[#8f2948]">Home</a>
+<a href="about.html" class="hover:text-[#8f2948]">About</a>
+<a href="projects.html" class="hover:text-[#8f2948]">Projects</a>
+<a href="skills.html" class="hover:text-[#8f2948]">Skills</a>
+</div></div>
+<div>
+<h4 class="font-bold mb-5">Connect</h4>
+<div class="flex flex-col gap-3 text-[#83777a] text-sm">
+<a href="#" class="hover:text-[#8f2948]">GitHub</a>
+<a href="#" class="hover:text-[#8f2948]">Instagram</a>
+<a href="#" class="hover:text-[#8f2948]">LinkedIn</a>
+<a href="mailto:your@email.com" class="hover:text-[#8f2948]">Email</a>
+</div></div>
+</div>
+<div class="border-t border-[#e8dfe1] mt-12 pt-7 flex flex-col sm:flex-row justify-between gap-4 text-sm text-[#95898c]">
+<p>© 2026 Mahesa. All rights reserved.</p>
+<p>HTML • Tailwind CSS • JavaScript</p>
+</div>
+</div>
+</footer>
+
+<script type="module" src="./assets/main.js"></script>
+
+<script>
+const n1=document.getElementById('num1');
+const n2=document.getElementById('num2');
+const op=document.getElementById('operator');
+const btn=document.getElementById('calculate');
+const result=document.getElementById('result');
+const formula=document.getElementById('formula');
+btn.addEventListener('click',()=>{
+    const a=parseFloat(n1.value);
+    const b=parseFloat(n2.value);
+    if(Number.isNaN(a)||Number.isNaN(b)){
+        result.textContent='-';
+        formula.textContent='Masukkan kedua angka terlebih dahulu.';
+        return;
+    }
+    let r;
+    if(op.value==='+') r=a+b;
+    else if(op.value==='-') r=a-b;
+    else if(op.value==='*') r=a*b;
+    else {
+        if(b===0){ result.textContent='Error'; formula.textContent='Angka kedua tidak boleh 0 untuk pembagian.'; return; }
+        r=a/b;
+    }
+    result.textContent=Number.isInteger(r)?r:r.toFixed(2);
+    formula.textContent=`${a} ${op.value} ${b} = ${r}`;
+});
+</script>
+
+</body>
+</html>

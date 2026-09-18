@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-dark: #ffffff;
+    --color-card: #ffffff;
+    --color-burgundy: #7f1d3d;
+    --color-burgundy-soft: #f3e3e8;
+    --shadow-burgundy: 0 18px 50px rgba(127, 29, 61, 0.12);
+}
+
+:root {
+    --burgundy: #7f1d3d;
+    --burgundy-deep: #64152f;
+    --wine-soft: #f3e3e8;
+    --ink: #332a2c;
+    --muted: #766b6e;
+    --line: #e8dfe1;
+    --paper: #ffffff;
+    --paper-soft: #faf8f8;
+}
+
+html { scroll-behavior: smooth; }
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3 { font-family: 'Playfair Display', Georgia, serif; }
+
+/* Keep Tailwind utility text/background semantics aligned with the soft theme. */
+.bg-dark { background: var(--paper) !important; }
+.bg-card { background: var(--paper) !important; }
+
+.grid-bg {
+    background-color: #fff;
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(127,29,61,.055), transparent 28%),
+        radial-gradient(circle at 88% 75%, rgba(127,29,61,.045), transparent 30%);
+}
+
+.card-hover {
+    transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.card-hover:hover {
+    transform: translateY(-6px);
+    border-color: rgba(127,29,61,.35) !important;
+    box-shadow: var(--shadow-burgundy);
+}
+
+.hero-line {
+    background: linear-gradient(90deg, transparent, var(--burgundy), transparent);
+}
+
+.soft-shadow { box-shadow: 0 16px 45px rgba(45, 30, 34, .08); }
+.soft-shadow-lg { box-shadow: 0 28px 70px rgba(45, 30, 34, .10); }
+
+::selection {
+    background: rgba(127,29,61,.15);
+    color: var(--burgundy-deep);
+}
+
+input, select, button, a { -webkit-tap-highlight-color: transparent; }
