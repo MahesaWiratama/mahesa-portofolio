@@ -3,7 +3,7 @@ import { resolve } from 'node:path'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-    base: '/portfolio-mahesa/',
+    base: '/mahesa-portofolio/',
 
     plugins: [
         tailwindcss()
